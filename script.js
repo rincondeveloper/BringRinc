@@ -1,7 +1,4 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//   document.querySelector('.check').style.display = 'flex';
-// });
-
+//USERNAME GREATING
 let username = document.getElementById('username')
 let usernameValue = username.textContent
 
@@ -9,11 +6,11 @@ let msg = document.getElementById('msg')
 msg.innerHTML = `Hello, ${usernameValue}`;
 
 
-
-
+//CONST
 const aside = document.getElementById('aside')
 
 const container = document.getElementById('container')
+const header = document.getElementById('header')
 const gallery = document.getElementById('gallery')
 const head = document.getElementById('head')
 const album = document.getElementById('album')
@@ -30,10 +27,52 @@ const off = document.getElementById('off')
 
 const words = document.getElementsByClassName('word')
 
+//BUTTONS FUNCTIONS
 
+//HOME
+
+const home = document.getElementById('home')
+
+home.addEventListener('click', function(event) {
+    event.preventDefault()
+    
+    header.scrollIntoView({behavior: 'smooth'})
+})
+
+
+//NEW RELEASES
+const newReleases = document.getElementById('new-releases')
+
+newReleases.addEventListener('click', function(event) {
+    event.preventDefault()
+    
+    const newReleasesSection = document.getElementById('new-releases-section')
+    newReleasesSection.scrollIntoView({behavior: 'smooth'})
+})
+
+
+//BEST ALBUMS
+const bestAlbums = document.getElementById('best-albums')
+
+bestAlbums.addEventListener('click', function(event) {
+    event.preventDefault()
+    
+    const bestAlbumsSection = document.getElementById('best-albums-section')
+    bestAlbumsSection.scrollIntoView({behavior: 'smooth'})
+})
+
+
+
+
+
+
+
+
+
+//AGRANDAR IMAGENES Y MOVER A LA IZQUIERDA
 function upHeightImg () {
     for (let i = 0; i < img.length; i++) {
-        img[i].style.height = '19em'
+        img[i].style.height = '19.5em'
     }
 }
 
@@ -48,12 +87,14 @@ left.addEventListener('click', function() {
     right.style.transform = 'translate(0, 0)'
 })
 
+//ACHICAR IMAGENES Y MOVER A LA DERACHA
 
 function downHeightImg () {
     for (let i = 0; i < img.length; i++) {
         img[i].style.height = '16.5em'
     }
 }
+
 right.addEventListener('click', function() {
     aside.style.transform = 'translate(0, 0)'
     container.style.paddingLeft = '13.5%'
