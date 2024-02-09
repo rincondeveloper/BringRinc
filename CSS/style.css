@@ -171,6 +171,7 @@ body {
 .container-header {
   width: 100%;
   padding: 1.1em 0;
+  background-color: aquamarine;
 }
 .container-header-nav {
   display: flex;
@@ -252,6 +253,7 @@ body {
 .container-gallery {
   display: flex;
   flex-direction: column;
+  background-color: blanchedalmond;
   width: 100%;
   padding: 4em 0 1em;
 }
@@ -259,6 +261,7 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0 3.5em;
+  background-color: brown;
 }
 .container-gallery-head h2 {
   color: var(--font-white-dark-mode);
@@ -270,23 +273,32 @@ body {
   max-width: 100%;
   padding: 0 3em;
   margin: auto;
+  background-color: cornflowerblue;
 }
 .container-gallery-items-album {
   display: flex;
   flex-direction: column;
-  padding: 0 0.5em;
-  max-width: 95%;
+  width: 13em;
+  height: 17.5em;
   overflow: hidden;
+  background-color: coral;
 }
 .container-gallery-items-album-img {
   overflow: hidden;
   border-radius: 0.5em;
   text-align: center;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #959595;
 }
 .container-gallery-items-album-img img {
   display: block;
-  height: 16.5em;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   transition: all 1s ease;
+  cursor: pointer;
 }
 .container-gallery-items-album-img img:hover {
   transform: scale(1.2);
@@ -298,21 +310,33 @@ body {
   flex-direction: column;
   overflow: hidden;
   color: #fff;
-  max-width: 100%;
+  width: 100%;
 }
 .container-gallery-items-album-info h4 {
   margin: 0em;
   padding: 0.7em 0 0;
+}
+.container-gallery-items-album-info h4:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 .container-gallery-items-album-info h5 {
   margin: 0em;
   padding: 0.7em 0 0;
   font-size: 1em;
 }
+.container-gallery-items-album-info h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .container-gallery-items-album-info-name h4 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.container-gallery-items-album-info-name h4:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 .container-gallery-items-album-info-review {
   display: none;

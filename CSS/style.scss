@@ -21,10 +21,6 @@ body {
     scroll-behavior: smooth;
 }
 
-
-
-
-
 .main {
     background-color: var(--menu-dark-mode);
     background-color: #fff;
@@ -215,6 +211,7 @@ body {
     &-header {
         width: 100%;
         padding: 1.1em 0;
+        background-color: aquamarine;
     
         &-nav {
             display: flex;
@@ -310,6 +307,7 @@ body {
     &-gallery {
         display: flex;
         flex-direction: column;
+        background-color: blanchedalmond;
 
         width: 100%;
         padding: 4em 0 1em;
@@ -317,8 +315,8 @@ body {
         &-head {
             display: flex;
             flex-direction: row;
-
             margin: 0 3.5em;
+            background-color: brown;
             h2 {
                 color: var(--font-white-dark-mode);
             }
@@ -331,22 +329,32 @@ body {
             max-width: 100%;
             padding: 0 3em;
             margin: auto;
+            background-color: cornflowerblue;
             &-album {
                 display: flex;
                 flex-direction: column;
-                padding: 0 .5em;
-                max-width: 95%;
+                // padding: 0 .5em;
+                width: 13em;
+                height: 17.5em;
                 overflow: hidden;
+                background-color: coral;
                 
                 &-img {
                     overflow: hidden;
                     border-radius: .5em;
                     text-align: center;
+                    height: 100%;
+                    max-width: 100%;
+                    max-height: 100%;
+                    background-color: #959595;
+                    
                     img {
                         display: block;
-                        height: 16.5em;
-                        // max-width: 17em;
+                        height: 100%;
+                        max-width: 100%;
+                        max-height: 100%;
                         transition: all 1s ease;
+                        cursor: pointer;
                     } img:hover {
                         transform: scale(1.2);
                         filter: brightness(40%);
@@ -360,29 +368,34 @@ body {
                     // grid-template-columns: repeat(2, 1fr);
                     overflow: hidden;
                     color: #fff;
-                    max-width: 100%;
+                    width: 100%;
                     h4 {
                         margin: 0em;
-                        padding: .7em 0 0;
-                    }
+                        padding: .7em 0 0;  
+                    } h4:hover {
+                        cursor: pointer;
+                        text-decoration: underline;}
                     h5 {
                         margin: 0em;
                         padding: .7em 0 0;
                         font-size: 1em;
+                        
+                    } h5:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
                     }
                     &-name {
                         h4 {
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
+                        } h4:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
                         }
                     }
-                    &-date {
-                        
-                    }
-                    &-artists {
-                        
-                    }
+                    &-date {}
+                    &-artists {}
                     &-review {
                         display: none;
                     }

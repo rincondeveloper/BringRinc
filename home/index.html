@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | BringRinc</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./IMG/favicon_io (1)/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./IMG/favicon_io (1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./IMG/favicon_io (1)/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <aside id="aside">
+      <section class="account">
+        <header class="account__info" title="Profile">
+          <div class="account__info-pic">
+            <img src="./src/img/profile-pic.avif" alt="profile-pic">
+          </div>
+
+          <div class="account__info-username" id="username">
+            <p class="username">Abraham</p>
+          </div>
+        </header>
+
+        <button class="account__settings" title="Settings">
+            <div class="account__settings-dots">
+                <i class="fa-solid fa-ellipsis word"></i>
+            </div>
+        </button>
+      </section>
+    </aside>
+
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+}
+
+aside {
+  height: 100vh;
+  width: 16em;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding: 0.5em;
+  box-shadow: 1px 1px 20px 4px #282828;
+}
+aside .account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.3em;
+  padding: 0.5em;
+}
+aside .account header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  color: white;
+}
+aside .account header .account__info-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.35em;
+  width: 2.35em;
+  background-color: #9225ff;
+  background: linear-gradient(90deg, #9225ff 0%, #ff00b8 100%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+aside .account header .account__info-pic img {
+  height: 2em;
+  border-radius: 50%;
+}
+aside .account header .account__info-username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside .account header .account__info-username .username {
+  padding: 0.5em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+aside .account button {
+  background-color: transparent;
+  color: white;
+  font-size: 1.3em;
+  border: none;
+  cursor: pointer;
+}
+aside .account button:hover {
+  color: #b0b0b0;
+}
+aside .account:hover {
+  background-color: #282828;
+}/*# sourceMappingURL=style.css.map */
