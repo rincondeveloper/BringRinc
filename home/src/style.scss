@@ -6,6 +6,7 @@
 
 body {
     background-color: #000000;
+    font-family: 'Montserrat', sans-serif;
 }
 
 aside {
@@ -46,13 +47,13 @@ aside {
                 align-items: center;
                 height: 2.35em;
                 width: 2.35em;
-                background: rgb(0,68,162);
                 background: linear-gradient(58deg, rgba(0,68,162,0.7903536414565826) 0%, rgba(0,116,255,1) 35%, rgba(0,255,252,1) 100%);
                 border-radius: 50%;
                 overflow: hidden;
 
                 img {
                     height: 2em;
+                    width: 2em;
                     border-radius: 50%;
                 }
             }
@@ -62,10 +63,9 @@ aside {
                 align-items: center;
 
                 .username {
-                    padding: .5em;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: .9em;
-                    font-weight: 600;
+                    padding: 0 0 .3em .5em;
+                    font-family: 'Montserrat', sans-serif;                    font-size: .9em;
+                    font-weight: 500;
                 }
             }
         }
@@ -99,7 +99,10 @@ aside {
 
             background-color: transparent;
             color: rgb(255, 255, 255);
-            font-size: 1em;
+            font-size: .9em;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            font-weight: 300;
 
             border: 0;
             border-left: 1px solid transparent;
@@ -122,6 +125,13 @@ aside {
                 img {
                     width: 100%;
                 }
+            }
+
+            &.active {
+                border-left: 1px solid rgb(232, 232, 232);
+                gap: 1em;
+                // background: linear-gradient(90deg, #1a1a1a 0%, rgb(29, 29, 29) 100%);
+                background-color: #0c0c0c;
             }
         }
     } 

@@ -148,12 +148,10 @@ const activateButton = document.querySelectorAll('.menu-button')
 
 activateButton.forEach((button) => {
     button.addEventListener('click', () => {
-        button.classList.toggle('active')
+        activateButton.forEach((btn) => {
+            btn.classList.remove('active');
+        });
+        button.classList.add('active');
     })
 })
 
-// const menuIcon = document.getElementById('menu-icon')
-
-// menuIcon.addEventListener('click', () => {
-//     menuIcon.classList.toggle('active')
-// })
